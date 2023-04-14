@@ -4,6 +4,7 @@ services:
 
   frontend:
     image: "grocy/frontend:v4.0.3"
+    container_name: grocy-frontend
     build:
       args:
         GROCY_VERSION: v4.0.3
@@ -21,6 +22,7 @@ services:
 
   backend:
     image: "grocy/backend:v4.0.3"
+    container_name: grocy-backend
     build:
       args:
         GROCY_VERSION: v4.0.3
